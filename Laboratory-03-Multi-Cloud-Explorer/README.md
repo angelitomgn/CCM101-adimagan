@@ -47,3 +47,38 @@ The results of this investigation are included in this folder together with the 
 
 This laboratory helped me understand that choosing a cloud provider is not simply about choosing the most popular platform. The correct choice depends on the company's requirements, existing technologies, budget, workload, and future plans.
 
+## Checkpoint 7 – Linux Investigation
+
+For this checkpoint, I used the KillerCoda Ubuntu 24.04 Playground to investigate the Linux environment. I used Linux commands to check the operating system, CPU, memory, and available disk space.
+
+### System Information
+
+| Information          | Result                                                 |
+| -------------------- | ------------------------------------------------------ |
+| Operating System     | Ubuntu 24.04                                           |
+| CPU                  | Intel Xeon E312xx (Sandy Bridge, IBRS update), 2.0 GHz |
+| Total Memory         | 1.9 GiB                                                |
+| Available Memory     | 1.4 GiB                                                |
+| Disk Size            | 19G                                                    |
+| Disk Used            | 5.4G                                                   |
+| Available Disk Space | 13G                                                    |
+| Disk Usage           | 30%                                                    |
+
+### Linux Commands Used
+
+```bash
+grep PRETTY_NAME /etc/os-release
+lscpu | grep "Model name"
+free -h
+df -h /
+```
+
+### Cloud Services That Could Host This Linux Server
+
+If this Linux server were migrated to the cloud, it could be hosted using the virtual machine services of the three major cloud providers.
+
+* **AWS – Amazon EC2:** EC2 can provide a virtual machine where a Linux operating system can run applications and services.
+* **Microsoft Azure – Azure Virtual Machines:** Azure Virtual Machines can host Linux servers in the Azure cloud.
+* **Google Cloud – Compute Engine:** Compute Engine can provide a virtual machine for running a Linux server and its applications.
+
+All three options can host a Linux server, so the final choice would depend on factors such as cost, performance, available features, existing company systems, and the location of users.
